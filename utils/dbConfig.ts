@@ -3,7 +3,7 @@ import { URL, URL_LOCAL } from "./constant";
 
 export const dbConfig = async () => {
   try {
-    await connect(URL_LOCAL).then(() => {
+    await connect(URL).then(() => {
       console.log("database connection established 🚀🚀🚀");
     });
   } catch (error) {
